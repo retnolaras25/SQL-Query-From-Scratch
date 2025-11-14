@@ -125,4 +125,29 @@ VALUES
 ('Gaming Mouse', 1, 600000, 30),
 ('Sweatshirt Hoodie', 2, 280000, 50),
 ('Hair Dryer', 5, 400000, 40),
-('Fiction Novel', 3, 
+('Fiction Novel', 3, 110000, 45);
+
+
+
+INSERT INTO customers (full_name, email, country, join_date)
+VALUES
+('Rara Intani', 'rara.intani@gmail.com', 'Indonesia', '2024-05-12'),
+('Budi Santoso', 'budi.santoso@gmail.com', 'Indonesia', '2024-06-20'),
+('Siti Rahma', 'siti.rahma@gmail.com', 'Malaysia', '2024-07-15'),
+('John Tan', 'john.tan@gmail.com', 'Singapore', '2024-08-01'),
+('Aiko Suzuki', 'aiko.suzuki@gmail.com', 'Japan', '2024-09-03'),
+('Andi Wijaya', 'andi.wijaya@gmail.com', 'Indonesia', '2024-09-12'),
+('Maria Lopez', 'maria.lopez@gmail.com', 'Philippines', '2024-09-15'),
+('Dewi Anggraini', 'dewi.anggraini@gmail.com', 'Indonesia', '2024-09-18'),
+('Chen Wei', 'chen.wei@gmail.com', 'China', '2024-09-21'),
+('Nguyen Anh', 'nguyen.anh@gmail.com', 'Vietnam', '2024-09-23'),
+('Putri Lestari', 'putri.lestari@gmail.com', 'Indonesia', '2024-10-01'),
+('Rafi Maulana', 'rafi.maulana@gmail.com', 'Indonesia', '2024-10-03'),
+('Linda Hartono', 'linda.hartono@gmail.com', 'Indonesia', '2024-10-05'),
+('Aditya Nugroho', 'aditya.nugroho@gmail.com', 'Indonesia', '2024-10-07'),
+('Nina Park', 'nina.park@gmail.com', 'Korea', '2024-10-10'),
+('Eka Saputra', 'eka.saputra@gmail.com', 'Indonesia', '2024-10-12'),
+('Sari Wulandari', 'sari.wulandari@gmail.com', 'Indonesia', '2024-10-15'),
+('Ahmad Fauzan', 'ahmad.fauzan@gmail.com', 'Indonesia', '2024-10-18'),
+('Takeshi Ito', 'takeshi.ito@gmail.com', 'Japan', '2024-10-21'),
+('Hana Kim', 'hana.kim@gmail.com', 'Korea', '2024-10-25');
