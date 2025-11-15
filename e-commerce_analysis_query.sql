@@ -19,3 +19,14 @@ WITH CTE AS (
   FROM 
      CTE 
   GROUP BY category_name;
+
+
+/**Total revenue per category**/
+SELECT 
+  categories.category_name,
+  SUM(order_items.subtotal) AS total_revenue
+FROM order_items
+JOIN products  ON order_items.product_id = products.product_id
+JOIN categories  ON products.category_id = categories.category_id
+GROUP BY categories.category_name
+ORDER BY total_revenue DESC;
