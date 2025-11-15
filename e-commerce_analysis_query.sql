@@ -43,3 +43,15 @@ JOIN products ON order_items.product_id = products.product_id
 GROUP BY products.product_name
 ORDER BY total_sold DESC
 LIMIT 5;
+
+
+
+/**Categories with the highest orders**/
+SELECT 
+  categories.category_name,
+  COUNT(DISTINCT order_items.order_id) AS total_orders
+FROM order_items 
+JOIN products  ON order_items.product_id = products.product_id
+JOIN categories  ON products.category_id = categories.category_id
+GROUP BY categories.category_name
+ORDER BY total_orders DESC;
