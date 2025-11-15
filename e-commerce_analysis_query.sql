@@ -30,3 +30,16 @@ JOIN products  ON order_items.product_id = products.product_id
 JOIN categories  ON products.category_id = categories.category_id
 GROUP BY categories.category_name
 ORDER BY total_revenue DESC;
+
+
+
+/**TOP 5 MOST SELLING PRODUCT**/
+
+SELECT 
+  products.product_name,
+  SUM(order_items.quantity) AS total_sold
+FROM order_items 
+JOIN products ON order_items.product_id = products.product_id
+GROUP BY products.product_name
+ORDER BY total_sold DESC
+LIMIT 5;
